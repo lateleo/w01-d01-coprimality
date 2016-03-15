@@ -2,7 +2,7 @@
 
 
 def determine_coprimality(m, n)
-  if m == 1 || n == 1 || m * n == 0
+  if m.abs == 1 || n.abs == 1 || m * n == 0
     return false
   end
   m = m.abs
