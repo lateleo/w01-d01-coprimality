@@ -14,7 +14,7 @@ def determine_coprimality(m, n)
   elsif n = m
     return false
   end
-  while big * sml != 0
+  while big != sml
     dif = big - sml
     big = dif
     if big < sml
@@ -22,8 +22,11 @@ def determine_coprimality(m, n)
       big = sml
       sml = var1
     end
-    puts "#{big}, #{sml}"
   end
+  if big > 0
+    return false
+  end
+  return true
 end
 
 binding.pry
