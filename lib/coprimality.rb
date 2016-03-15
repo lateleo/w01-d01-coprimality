@@ -2,6 +2,12 @@
 
 
 def determine_coprimality(m, n)
+  spec = [0]
+  spec.push(m)
+  spec.push(n)
+  if spec.include?(m * n)
+    return false
+  end
   while m != n
     if m < n
       var1 = m
