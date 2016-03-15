@@ -26,4 +26,4 @@ def determine_coprimality(m, n)
   end
 end
 
-bundling.pry
+binding.pry
