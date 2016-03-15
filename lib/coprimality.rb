@@ -2,8 +2,6 @@
 
 
 def determine_coprimality(m, n)
-  big = m
-  sml = n
   while m != n
     if m < n
       var1 = m
