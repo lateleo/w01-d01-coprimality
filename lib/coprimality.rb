@@ -1,4 +1,5 @@
-# Verifies that the GCD of the two numbers is not greater than 1.
+# Verifies that the GCD of the two numbers is not greater than 1,
+# using the Euclidean Algorithm.
 def euclid_loop(arr)
   while arr[1] > 0
     arr.reverse! if arr[0] < arr[1]
